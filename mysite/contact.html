@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>Contact</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/stylesheet.css" rel="stylesheet">
+	</head>
+
+<body>
+	<div id="wrapper">
+	
+    <nav class="menu"><!--The primary navigation for the page -->
+		<ul>
+			<li><a href="index.html">Learning Journal</a></li>
+			<li><a href="tutorial.html">Tutorial</a></li>
+			<li><a href="contact.html" class="active">Contact me</a></li>
+		</ul>
+	</nav>
+    
+    <main style="overflow:auto;">
+		<div id="contact_form">
+			<form>
+				<fieldset>
+					<legend>Contact details</legend>
+					
+					<label for="name">Name </label>
+					<input class="text_input" type="text" id="name" placeholder="Required"  required />
+					<label for="email">Email address </label>
+					<input class="text_input" type="email"  id="email" placeholder="Required" required />
+					<label for="url">Website address</label>
+					<input class="text_input" type="url" id="url" value="http://" />
+				</fieldset>
+			
+				<fieldset>
+					<legend>Comments</legend>
+					
+					<textarea id="message" placeholder="Required" required></textarea>
+				</fieldset>
+		
+				<fieldset id="radio">
+					<legend>Would you like more information?</legend>
+					
+					<label for="information-yes">
+					<input type="radio" id="information-yes" name="information" value="yes" /> Yes please</label>
+					<label for="information-no">
+					<input type="radio" id="information-no" name="information" value="no" /> No, thanks</label>
+				</fieldset>
+		
+				<input type="submit" id="contact_submit" value="Click to send" />
+			</form>	
+		</div>
+		
+		<div class="rTable">
+			<div class="rTableBody">
+				<div class="rTableRow">
+					<div class="rTableHead">Day/time</div>
+					<div class="rTableHead">Monday</div>
+					<div class="rTableHead">Tuesday</div>
+					<div class="rTableHead">Wednesday</div>
+					<div class="rTableHead">Thursday</div>
+					<div class="rTableHead">Friday</div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">9-10am</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell">CI435 lecture</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell">CI401 lecture</div>
+					<div class="rTableCell"> </div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">10-11am</div>
+					<div class="rTableCell">CI401 lecture</div>
+					<div class="rTableCell">CI402 lecture</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell">CI401 lab</div>
+					<div class="rTableCell"> </div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">11-12am</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell">CI402 lab</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">12-1pm</div>
+					<div class="rTableCell">CI435 lecture</div>
+					<div class="rTableCell">CI435 lab</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">1-2pm</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell">CI400 lab</div>
+					<div class="rTableCell"> </div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">2-3pm</div>
+					<div class="rTableCell">CI400 lecture</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell">CI400 lab</div>
+					<div class="rTableCell">CI453 lab</div>
+				</div>
+				<div class="rTableRow">
+					<div class="rTableCell">3-4pm</div>
+					<div class="rTableCell">CI400 lecture</div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+					<div class="rTableCell"> </div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<a href="mailto:t.burch1@uni.brighton.ac.uk">Email me</a>
+			<small>&copy; 2018, Tom Burch.</small>
+		</footer>
+	</main>
+
+	</div>
+</body>
+</html>

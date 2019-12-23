@@ -1,0 +1,292 @@
+/*sections------------------------------------------------------------------- */
+html {
+	scroll-behavior: smooth; /* Prevents jumping when moving to different anchor (only on browser) */
+}
+
+body {
+	font-family: Calibri;
+	background: url("../images/bg2.jpg"); /* Creates repeated background image */
+	margin-bottom: 15px; /* Allow background to wrap around the bottom */
+}
+
+#wrapper {
+	max-width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+}
+
+main  {
+	padding: 0px 10px 8px 10px;
+	position: relative;
+}
+
+footer {
+	bottom: 0;
+	right: 0;
+	position: absolute; /*Allows text to be placed in bottom-right*/
+}
+
+
+input {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+fieldset {
+	margin: 1% 1% 1% 1%;
+	max-width: 100%; /*Prevents being larger than container*/
+	min-width: 0%; /*Fixes resizing issues on Firefox*/
+}
+
+legend {
+	overflow: hidden; /*Prevents text escaping container*/
+}
+
+textarea {
+	width: 98.5%;
+	max-width: 100%;
+}
+
+.references {
+	font-size: 11px;
+	font-style: oblique;
+	margin-top: 4%;
+}
+
+/*Video------------------------------------------------------------------- */
+
+.video-wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.video-wrapper h2 {
+	margin-left: 4%;
+}
+
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /*16:9 */
+	height: 0;
+	width: 92%;
+	margin-left: 4%;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Instructions------------------------------------------------------------------- */
+
+.instructions h3 {
+	margin-left: 4%;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	padding: inherit; /*Removes unnescessary padding*/
+}
+.card {
+	display: flex; 
+	margin-left: 1.5%;
+	margin-right: 1.5%;
+}
+
+.card img {
+	max-height: 140px;
+	margin-left: 2.5%;
+	/*width: 95%;  /*Make images all the same size*/
+}
+
+.card-content {
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #b8860b;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 3%; /*Center image*/
+  padding: 5.9%;
+}
+
+.card-content h4{
+	padding: 0; /*Removes unnecessary padding*/
+	margin: 0 3% 6%; /*Raises title*/
+}
+
+.card-content p{
+	margin: 3% 0 24% 4%; /*Align text with image*/
+}
+
+@media screen and (max-width: 639px) {
+	.card { width: 98%; }
+}
+
+/*640 px - tablet portrait orientation - 2 columns*/
+@media screen and (min-width: 40em){
+	.card { width: 47%; }
+}
+/*960 px* - tablet landscape orientation and above - 3 columns*/
+@media screen and (min-width: 60em) {
+	.card { width: 30%; }
+}
+
+/*Table------------------------------------------------------------------- */
+
+.rTable {
+	display: table;
+	width: 51%;
+	float: right;
+	margin-bottom: 16px;
+	word-break: break-all; /*Stops text leaving table*/
+	font-size: 0.99vw; /*Responsive font-size*/
+}
+
+.rTableBody {
+	display: table-row-group;
+}
+
+.rTableRow {
+	display: table-row;
+}
+
+.rTableCell, .rTableHead {
+	display: table-cell;
+	padding: 1% 1%;
+	border: 1px solid #999999;
+}
+
+.rTableHead {
+	text-align: justify;
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+}
+@media screen and (max-width: 1164px){
+	.rTable { 
+		width: 98.5%; 
+		font-size: 1.5vw; /*Increase font size with table*/
+		margin-right: 1%;
+	}
+}
+
+/*Contact form------------------------------------------------------------- */
+
+#contact_form {
+	border: 3px groove;  /* Creates bold outline */
+	margin-bottom: 8px;
+	float: left;
+	width: 47%;
+}
+
+#contact_form label, input {
+	display: block;
+}
+
+#contact_form .text_input {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#contact_submit {
+	margin: 0 auto 1% auto;
+	max-width: 100%;
+}
+
+#radio input {
+	display: inline;
+}
+
+@media screen and (max-width: 1164px){
+	#contact_form { width: 98.5%; }
+}
+	
+/*Return------------------------------------------------------------------- */
+
+.return a{
+	color: white;
+	display: block;
+	text-align: right;
+    padding: 14px 16px;
+	font-family: Arial;
+	text-decoration: none;
+	background-color: #333;
+	float: right;
+	position: fixed;
+	bottom: 0;
+    right: 0;
+}
+
+.return a:hover {
+	color: white;
+	background-color: #0090D2;
+}
+
+.post {
+	background-color: #CCC;
+}
+
+.nav a:link{
+	color: #0090D2;
+}
+
+/*Menu------------------------------------------------------------------- */
+
+.menu ul{
+	padding: 0px;
+	overflow: hidden;
+	list-style-type: none;
+	background-color: #333;
+}
+
+.menu li{
+	float: left;
+}
+
+.menu a {
+	color: white;
+	display: block;
+	text-align: center;
+    padding: 14px 16px;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	color: white;
+	background-color: #0090D2;
+}
+
+.menu a.active {
+	background-color: black;
+}
+
+/*headings------------------------------------------------------------------- */
+h1	{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #F60;
+	font-size: 36px;
+	line-height: 50px;
+}
+
+/*image----------------------------------------------------------------------- */
+
+img	{
+	border:	2px solid #021a40;   /* Black, curved border around images */
+	border-radius: 10px;
+	max-width: 100%   /* Responsive image size */
+}
+
+/*anchors--------------------------------------------------------------------- */
+a:link	{
+	color: #FFF;
+}
+
+a:hover {
+	color: #0063A6;
+	text-decoration: none;
+}
